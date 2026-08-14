@@ -1,7 +1,7 @@
 package net.aungk.tutorial_mod.item;
 
 import net.aungk.tutorial_mod.TutorialMod;
-import net.minecraft.core.Registry;
+import net.aungk.tutorial_mod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +21,8 @@ public class ModCreativeModTab {
                             (pParemeter, pOutput) -> {
                                 pOutput.accept(ModItems.SAPPHIRE.get());
                                 pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                                pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                                pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                             }
                     )
                     .build());

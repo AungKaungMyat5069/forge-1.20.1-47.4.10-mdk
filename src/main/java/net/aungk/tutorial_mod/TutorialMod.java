@@ -1,6 +1,7 @@
 package net.aungk.tutorial_mod;
 
 import com.mojang.logging.LogUtils;
+import net.aungk.tutorial_mod.block.ModBlocks;
 import net.aungk.tutorial_mod.item.ModCreativeModTab;
 import net.aungk.tutorial_mod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -12,7 +13,6 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -35,6 +35,7 @@ public class TutorialMod
 
         ModItems.register(modEventBus);
         ModCreativeModTab.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
@@ -49,6 +50,7 @@ public class TutorialMod
     }
 
     // Add the example block item to the building blocks tab
+    // add the vanilla minecraft tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
