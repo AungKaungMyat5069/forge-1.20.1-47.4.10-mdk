@@ -1,6 +1,7 @@
 package net.aungk.tutorial_mod.item;
 
 import net.aungk.tutorial_mod.TutorialMod;
+import net.aungk.tutorial_mod.item.custom.BurnableItem;
 import net.aungk.tutorial_mod.item.custom.MedalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,7 @@ public class ModItems {
     public static final RegistryObject<Item> MEDAL_DETECTOR = ITEMS.register("medal_detector",
             () -> new MedalDetectorItem(new Item.Properties().durability(100)));
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(ModFoods.STAWBERRY)));
+    public static final RegistryObject<Item> PIPE_CONE = ITEMS.register("pipe_cone", () -> new BurnableItem(new Item.Properties(), 400));
 
     // give it to the minecraft code
     public static void register(IEventBus iEventBus) {

@@ -13,6 +13,7 @@
   "item.tutorialmod.medal_detector" : "Medal Detector",
   "block.tutorialmod.sound_block" : "SoundBlock",
   "item.tutorialmod.strawberry" : "Strawberry",
+  "item.tutorialmod.pipe_cone" : "Pipe Cone",
 
-  "creativeTab.tutorial_tab" : "Tutorial Tab",
+  "creativeTab.tutorial_tab" : "Tutorial Tab"
 }

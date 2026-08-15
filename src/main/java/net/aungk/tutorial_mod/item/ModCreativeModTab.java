@@ -32,6 +32,7 @@ public class ModCreativeModTab {
                                 pOutput.accept(ModItems.MEDAL_DETECTOR.get());
                                 pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                                 pOutput.accept(ModItems.STRAWBERRY.get());
+                                pOutput.accept(ModItems.PIPE_CONE.get());
                             }
                     )
                     .build());
