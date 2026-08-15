@@ -1,6 +1,7 @@
 package net.aungk.tutorial_mod.block;
 
 import net.aungk.tutorial_mod.TutorialMod;
+import net.aungk.tutorial_mod.block.custom.SoundBlock;
 import net.aungk.tutorial_mod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -39,6 +40,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registryBlock("end_stone_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).strength(2f).sound(SoundType.STONE),
                     UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registryBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
     private static <T extends Block>RegistryObject<Item> registryBlockItem(String name, RegistryObject<T> block) {

@@ -11,6 +11,7 @@
   "block.tutorialmod.end_stone_sapphire_ore": "End Stone Sapphire Ore",
 
   "item.tutorialmod.medal_detector" : "Medal Detector",
+  "block.tutorialmod.sound_block" : "SoundBlock",
 
   "creativeTab.tutorial_tab" : "Tutorial Tab",
 }

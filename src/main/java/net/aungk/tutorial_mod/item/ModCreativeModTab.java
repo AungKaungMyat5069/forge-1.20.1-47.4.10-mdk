@@ -30,6 +30,7 @@ public class ModCreativeModTab {
                                 pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
                                 pOutput.accept(ModItems.MEDAL_DETECTOR.get());
+                                pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                             }
                     )
                     .build());
