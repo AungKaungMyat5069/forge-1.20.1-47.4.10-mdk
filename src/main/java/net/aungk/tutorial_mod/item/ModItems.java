@@ -1,6 +1,7 @@
 package net.aungk.tutorial_mod.item;
 
 import net.aungk.tutorial_mod.TutorialMod;
+import net.aungk.tutorial_mod.item.custom.MedalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,6 +17,8 @@ public class ModItems {
     // new Properties - work like as the normal item, can not use bow or other function
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MEDAL_DETECTOR = ITEMS.register("medal_detector",
+            () -> new MedalDetectorItem(new Item.Properties().durability(100)));
 
     // give it to the minecraft code
     public static void register(IEventBus iEventBus) {
