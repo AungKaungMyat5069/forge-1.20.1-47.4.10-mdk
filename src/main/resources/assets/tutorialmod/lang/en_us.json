@@ -15,5 +15,7 @@
   "item.tutorialmod.strawberry" : "Strawberry",
   "item.tutorialmod.pipe_cone" : "Pipe Cone",
 
+  "tooltip.tutorialmod.medal_detector.tooltip" : "Find iron or diamond ore for you",
+
   "creativeTab.tutorial_tab" : "Tutorial Tab"
 }
