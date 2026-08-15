@@ -12,6 +12,7 @@
 
   "item.tutorialmod.medal_detector" : "Medal Detector",
   "block.tutorialmod.sound_block" : "SoundBlock",
+  "item.tutorialmod.strawberry" : "Strawberry",
 
   "creativeTab.tutorial_tab" : "Tutorial Tab",
 }

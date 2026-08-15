@@ -19,6 +19,7 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MEDAL_DETECTOR = ITEMS.register("medal_detector",
             () -> new MedalDetectorItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(ModFoods.STAWBERRY)));
 
     // give it to the minecraft code
     public static void register(IEventBus iEventBus) {
